@@ -1,0 +1,77 @@
+ 
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4 card" *ngFor="let obj of userData">
+          <div class="panel panel-default">
+              <div class="panel-heading"> 
+                <h3 class="panel-title">{{obj.name}}</h3>
+               </div>
+              <div class="panel-body">
+                 <div class="section-head"> 
+                   Personal Details
+                 </div>
+                 <div class="section-body">
+                    <div class="ln">
+                        <label>User Name</label><span>{{obj.username}}</span>
+                     </div>
+                     <div class="ln">
+                    <label>Email</label><span>{{obj.email}}</span>
+                  </div>
+                    <div class="ln">
+                    <label>Phone</label><span>{{obj.phone}}</span>
+                  </div>
+                    <div class="ln">
+                    <label>Website</label><span>{{obj.website}}</span>
+                  </div>
+                  </div>
+                  <div class="section-head"> 
+                      Address Details
+                  </div>
+                  <div class="section-body">
+                      <div class="ln">
+                    <label>Street</label><span>{{obj.address.street}}</span>
+                      </div>
+                    <div class="ln">
+                    <label>Suite</label><span>{{obj.address.suite}}</span>
+                    </div>
+                    <div class="ln">
+                    <label>Zipcode</label><span>{{obj.address.zipcode}}</span>
+                    </div>
+                  </div>
+                  <div class="section-head"> 
+                      Geo Details
+                  </div>
+                  <div class="section-body">
+                      <div class="ln">
+                    <label>Lat</label><span>{{obj.address.geo.lat}}</span>
+                      </div>
+                    <div class="ln">
+                    <label>Lan</label><span>{{obj.address.geo.lng}}</span>
+                    </div>
+                   </div>
+                   <div class="section-head"> 
+                      company Details
+                  </div>
+                  <div class="section-body">
+                      <div class="ln">
+                    <label>Comapny Name</label><span>{{obj.company.name}}</span>
+                      </div>
+                      <div class="ln">
+                    <label>Comapny Catch Phrase</label><span>{{obj.company.catchPhrase}}</span>
+                      </div>
+                      <div class="ln">
+                    <label>Comapny bs</label><span>{{obj.company.bs}}</span>
+                      </div>
+                   </div>
+              </div>
+              <div class="panel-footer">  <p><a class="btn btn-default" href="#" [routerLink]="['/userdetails',obj.id]" role="button">View Todos</a></p></div>
+            </div>
+        
+         
+      
+      </div>
+ 
+    </div>
+
+</div>
