@@ -1,0 +1,22 @@
+.panel-default>.panel-heading {
+    color: #fff;
+    background-color: #00b8ff;
+    border-color: #ddd;
+}
+.section-head {
+    border-bottom: 1px solid #0db7fa;
+    font-weight: 600;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.section-body .ln>label {
+    display: table-cell;
+    width: 30%;
+}
+.section-body .ln {
+    display: table;
+    width: 100%;
+}
+.section-body {
+    margin-bottom: 15px;
+}

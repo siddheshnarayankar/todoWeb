@@ -1,0 +1,23 @@
+input[type=checkbox]:checked + label {
+    color:red;
+    text-decoration: line-through;
+  } /*This is the MDN spec for doing this*/
+  
+
+  .cbox4 {
+    font-size: 5em;
+    color: #010101;
+    text-decoration: line-through;
+    opacity: 0.3;
+  }
+
+  .checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+    position: absolute;
+    margin-top: 4px\9;
+    margin-left: 0px;
+}
+.panel-default>.panel-heading{
+  color: #fff;
+  background-color: #00b8ff;
+  border-color: #ddd;
+}
