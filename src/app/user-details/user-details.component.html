@@ -1,0 +1,36 @@
+
+
+
+<div class="card" style="    height: 300px;
+width: 700px;
+overflow: auto;
+position: absolute;
+margin: auto;
+ 
+background-color: #ddd;
+top: 0px;
+right: 0px;
+bottom: 0px;
+left: 0px;">
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Panel heading</div>
+  <div class="panel-body">
+      <button type="button" class="btn btn-primary" (click)="updateTodo()" [disabled]="!disabledStatus">Update Todo</button>
+      <button type="button" class="btn btn-primary" (click)="deleteTodo()" [disabled]="!disabledStatus">Delete Todo</button>
+  </div>
+
+  <!-- List group -->
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let obj of usersTodolist">
+        <div class="checkbox">
+            <input type="checkbox" (change)="changeCheck(obj.id)" value=""  class="cbox" [attr.checked]="obj.completed ? 'checked' : null"><label>{{obj.title}}</label>
+          </div>  
+      
+    </li>
+  
+  </ul>
+</div>
+     
+</div>
